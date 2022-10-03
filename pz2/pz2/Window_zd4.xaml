@@ -13,7 +13,7 @@
             </Grid.ColumnDefinitions>
             <Button x:Name="btn_result" Content="Результат" HorizontalAlignment="Left" Margin="67,317,0,0" VerticalAlignment="Top" Height="75" Width="143" Click="btn_result_Click" FontSize="18"/>
             <Button x:Name="btn_return" Content="Назад" HorizontalAlignment="Left" Margin="257,317,0,0" VerticalAlignment="Top" Height="75" Width="143" Click="btn_return_Click" FontSize="18"/>
-            <TextBlock HorizontalAlignment="Left" Margin="67,40,0,0" Text="В заданной последовательности целых чисел найти максимально длинную подпоследовательность чисел такую, что каждый последующий элемент подпоследовательности делился нацело на предыдущий." TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.044,-0.501" FontSize="16"/>
+            <TextBlock HorizontalAlignment="Left" Margin="67,40,0,0" Text="Дан массив a[1..n] и число b. Переставить числа в массиве таким образом, чтобы слева от некоторой границы стояли числа, меньшие или равные b, а справа от границы - большие или равные b." TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.044,-0.501" FontSize="16"/>
         </Grid>
 
     </Grid>
