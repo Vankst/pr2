@@ -24,7 +24,7 @@ namespace pz2
 
         private void btn_result_Click(object sender, RoutedEventArgs e)
         {
-            int razm = 2;
+            int razm = 20;
             Random rnd = new Random();
             int[] mas = new int[razm];
             for (int i = 0; i < mas.Length; i++)
@@ -43,7 +43,7 @@ namespace pz2
                     if (i < mas.Length)
                     {
                         if ((mas[i] % mas[j]) == 0)
-                        {                     
+                        {
                             kolv++;
                             //MessageBox.Show($"Число {mas[i]} делится нацело на {mas[j]}, количество {kolv}");
                             i++;
@@ -53,9 +53,14 @@ namespace pz2
                                 maxkolv = kolv;
                             }
                         }
+                        else
+                            if (i < j-1) {
+                            i++;
+                            break;
+                        }
                     }
                     else
-                        i++;
+                        break;
                 }
 
             }

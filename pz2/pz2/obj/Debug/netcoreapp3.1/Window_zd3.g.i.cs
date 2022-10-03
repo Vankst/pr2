@@ -85,7 +85,7 @@ namespace pz2 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/pz2;component/window_zd3.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/pz2;V1.0.0.0;component/window_zd3.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Window_zd3.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
