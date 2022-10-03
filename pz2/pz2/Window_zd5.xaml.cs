@@ -21,5 +21,12 @@ namespace pz2
         {
             InitializeComponent();
         }
+
+        private void btn_return_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Hide();
+        }
     }
 }
