@@ -5,20 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pz2"
         mc:Ignorable="d"
-        Title="Задание 5" Height="450" Width="800">
+        Title="Задание 5" Height="450" Width="1200">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="128*"/>
-            <RowDefinition Height="89*"/>
+            <RowDefinition Height="139*"/>
+            <RowDefinition Height="78*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="btn_result" Content="Результат" HorizontalAlignment="Left" Margin="67,61,0,0" VerticalAlignment="Top" Height="75" Width="143" Click="btn_result_Click" FontSize="18" Grid.Row="1"/>
-        <Button x:Name="btn_return" Content="Назад" HorizontalAlignment="Left" Margin="257,61,0,0" VerticalAlignment="Top" Height="75" Width="143" Click="btn_return_Click" FontSize="18" Grid.Row="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="67,40,0,0" Text="Сгенерировать массив размером M столбцов и N строк, содержащий числа от -10 до 10. Отобразить его пользователю. Отсортировать элементы в нем по возрастанию и по убыванию. Вывести результаты сортировки в двух таблицах. Найти максимальный и минимальный элементы массива. " TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.044,-0.501" FontSize="16"/>
+        <Button x:Name="btn_result" Content="Результат" HorizontalAlignment="Left" Margin="512,53,0,0" VerticalAlignment="Top" Height="75" Width="144" Click="btn_result_Click" FontSize="18" Grid.Row="1"/>
+        <Button x:Name="btn_return" Content="Назад" HorizontalAlignment="Left" Margin="716,53,0,0" VerticalAlignment="Top" Height="75" Width="144" Click="btn_return_Click" FontSize="18" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="67,40,0,0" Text="Сгенерировать массив размером M столбцов и N строк, содержащий числа от -10 до 10. Отобразить его пользователю. Отсортировать элементы в нем по возрастанию и по убыванию. Вывести результаты сортировки в двух таблицах. Найти максимальный и минимальный элементы массива. " TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.044,-0.501" FontSize="16" Height="43" Width="1125"/>
         <TextBox x:Name="tb_m" HorizontalAlignment="Left" Margin="67,167,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="27" FontSize="16"/>
         <TextBox x:Name="tb_n" HorizontalAlignment="Left" Margin="67,217,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="29" FontSize="16"/>
         <Label x:Name="lb_n" Content="Столбцы" Margin="10,169,716,122" Grid.RowSpan="2"/>
         <Label x:Name="lb_m" Content="Строки" Margin="10,221,716,118" Grid.RowSpan="2"/>
-        <DataGrid x:Name="dg_array" Margin="257,130,258,122" Grid.RowSpan="2"/>
+        <DataGrid x:Name="dg_array" Margin="257,130,691,122" Grid.RowSpan="2"/>
+        <DataGrid x:Name="dg_arrayup" Margin="559,130,389,122" Grid.RowSpan="2"/>
+        <DataGrid x:Name="dg_arraydown" Margin="861,130,87,122" Grid.RowSpan="2"/>
 
     </Grid>
 </Window>

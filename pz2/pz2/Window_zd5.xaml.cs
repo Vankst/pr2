@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Linq;
 
 namespace pz2
 {
@@ -57,6 +58,28 @@ namespace pz2
                     mas[i, j] = rnd.Next(-10, 10);
                 }
             }
+            mas = SortArray(mas, n, m);
+            MessageBox.Show(mas[0,0].ToString());
+            MessageBox.Show(mas[m-1,n-1].ToString());
         }
+
+
+        public int[,] SortArray(int[,] mas, int n, int m)
+        {
+            for (int i = n * m - 1; i > 0; i--)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    if (mas[j / m, j % m] > mas[i / m, i % m])
+                    {
+                        int x = mas[j / m, j % m];
+                        mas[j / m, j % m] = mas[i / m, i % m];
+                        mas[i / m, i % m] = x;
+                    }
+                }
+            }
+            return mas;
+        }
+
     }
 }
