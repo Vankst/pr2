@@ -26,7 +26,37 @@ namespace pz2
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
-            this.Hide();
+            Hide();
+        }
+
+        private void btn_result_Click(object sender, RoutedEventArgs e)
+        {
+            int n, m;
+            Random rnd = new Random();
+            try
+            {
+
+                m = int.Parse(tb_m.Text);
+                n = int.Parse(tb_n.Text);
+                if (m < 0 || n < 0)
+                {
+                    MessageBox.Show("Числа должны быть положительными");
+                    return;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Введите число");
+                return;
+            }
+            int[,] mas = new int[m, n];
+            for (int i = 0; i < mas.GetLength(0); i++)
+            {
+                for (int j = 0; j < mas.GetLength(1); j++)
+                {
+                    mas[i, j] = rnd.Next(-10, 10);
+                }
+            }
         }
     }
 }

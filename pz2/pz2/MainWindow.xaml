@@ -11,7 +11,7 @@
         <Button x:Name="btn_zd2" Content="Задание 2" HorizontalAlignment="Left" Margin="229,298,0,0" VerticalAlignment="Top" Height="51" Width="90" Click="btn_zd2_Click"/>
         <Button x:Name="btn_zd3" Content="Задание 3" HorizontalAlignment="Left" Margin="347,298,0,0" VerticalAlignment="Top" Height="51" Width="90" Click="btn_zd3_Click"/>
         <Button x:Name="btn_zd4" Content="Задание 4" HorizontalAlignment="Left" Margin="473,298,0,0" VerticalAlignment="Top" Height="51" Width="90"/>
-        <Button x:Name="btn_zd5" Content="Задание 5" HorizontalAlignment="Left" Margin="591,298,0,0" VerticalAlignment="Top" Height="51" Width="90"/>
+        <Button x:Name="btn_zd5" Content="Задание 5" HorizontalAlignment="Left" Margin="591,298,0,0" VerticalAlignment="Top" Height="51" Width="90" Click="btn_zd5_Click"/>
         <Label x:Name="lbl_text" Content="Вариант №2" HorizontalAlignment="Left" Margin="320,130,0,0" VerticalAlignment="Top" FontSize="24"/>
 
     </Grid>

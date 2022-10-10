@@ -28,5 +28,10 @@ namespace pz2
             mainWindow.Show();
             this.Close();
         }
+
+        private void btn_result_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
