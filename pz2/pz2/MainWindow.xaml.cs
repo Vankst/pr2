@@ -52,5 +52,12 @@ namespace pz2
             window_Zd5.Show();
             Hide();
         }
+
+        private void btn_zd4_Click(object sender, RoutedEventArgs e)
+        {
+            Window_zd4 window_Zd4 = new Window_zd4();
+            window_Zd4.Show();
+            Hide();
+        }
     }
 }
